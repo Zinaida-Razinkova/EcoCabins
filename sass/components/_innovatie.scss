@@ -1,0 +1,33 @@
+.innovatie {
+    padding-top: 72px;
+    padding-bottom: 80px;
+    background-color: #222F33;
+
+    @media screen and (max-width: 699.98px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.innovatie_title {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.innovatie_wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+}
+
+.innovatie_text {
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: #fff;
+    opacity: 0.7;
+
+    @media screen and (min-width: 853px) {
+        max-width: 380px;
+    }
+}

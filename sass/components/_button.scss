@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    max-width: 90px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #606B74;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #fd4d4d;
+    color: #606B74;
+}

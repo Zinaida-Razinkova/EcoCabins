@@ -1,0 +1,36 @@
+.footer {
+    min-height: 92px;
+    padding: 33px 0;
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768.98px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footer_email {
+    opacity: 0.6;
+}
+
+.footer_data-link,
+.footer_email {
+
+    &:hover,
+    &:focus {
+        color: #fd4d4d;
+    }
+}
+
+.footer_data {
+    display: flex;
+    column-gap: 30px;
+    opacity: 0.6;
+}

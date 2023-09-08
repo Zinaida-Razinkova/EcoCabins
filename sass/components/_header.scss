@@ -1,0 +1,133 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 6.5em;
+
+    @media screen and (max-width: 768.98px) {
+        height: 60px;
+    }
+}
+
+.header.scroll {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__wrapp {
+    @media screen and (max-width: 768.98px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 10px;
+
+    @media screen and (max-width: 768.98px) {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
+
+.header__list {
+    display: flex;
+
+    @media screen and (max-width: 768.98px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 19px;
+    }
+
+    @media screen and (min-width: 769px) {
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 40px;
+    }
+}
+
+.header__link {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+        color: #fd4d4d;
+    }
+}
+
+.header__button {
+    padding: 10px 21px;
+}
+
+// Mobile menu
+
+.header__menu {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}
+
+.header__menu-burger {
+    fill: #fff;
+}
+
+.header__menu .header__menu-close {
+    fill: #fd4d4d;
+    display: none;
+}
+
+
+.header__menu.is-open .header__menu-close {
+    display: block;
+    fill: #fd4d4d;
+}
+
+.header__menu.is-open .header__menu-burger {
+    display: none;
+}
+
+.header__container {
+
+    @media screen and (max-width: 768.98px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+
+        display: none;
+        padding: 20px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.header__container.scroll {
+    @media screen and (max-width: 768.98px) {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+}
